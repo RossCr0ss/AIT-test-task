@@ -1,6 +1,14 @@
 @import "/src/bootstrap/bootstrap.scss";
+@font-face {
+    font-family: 'BalooTammudu2';
+    src:  url('./../assets/fonts/BalooTammudu2-Bold.ttf') format('ttf');
+
+    font-weight: 600;
+    font-style: normal;
+}
 
 body {
+    font-family: 'BalooTammudu2', sans-serif;
     /* .container {
         width: 1172px;
     } */
