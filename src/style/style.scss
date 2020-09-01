@@ -9,6 +9,7 @@
 
 body {
     font-family: 'BalooTammudu2', sans-serif;
+    background-color: #f1f6fa;
     /* .container {
         width: 1172px;
     } */
@@ -20,6 +21,27 @@ body {
             /* .img {
                 background-image: url('./../assets/logo.png');
             } */
+        }
+
+        .search-box {
+            .dropdown {
+                &-toggle {
+                    border-radius: 20px 0 0 20px;
+                    background-color: #00ca00;
+                    width: 149px;
+                    height: 40px;
+                    color: #ffffff;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .form-inline {
+            .form-control {
+                border-radius: 0 20px 20px 0;
+                background-color: #ffffff;
+            }
         }
     }
 }
