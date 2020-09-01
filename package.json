@@ -1,0 +1,44 @@
+{
+  "name": "ait_test_task",
+  "version": "1.0.0",
+  "description": "test markup with using Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "webpack": "webpack",
+    "build": "webpack -d",
+    "prod": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RossCr0ss/Webpack-Bootstrap.git"
+  },
+  "keywords": [
+    "HTML",
+    "Bootstrap"
+  ],
+  "author": "RossCr0ss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RossCr0ss/Webpack-Bootstrap/issues"
+  },
+  "homepage": "https://github.com/RossCr0ss/Webpack-Bootstrap#readme",
+  "devDependencies": {
+    "css-loader": "^4.2.2",
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^4.4.1",
+    "image-webpack-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.11.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "sass-loader": "^10.0.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
