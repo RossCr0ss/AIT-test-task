@@ -13,6 +13,10 @@ module.exports = {
     },
     module: {
         rules: [{
+                test: /\.(html)$/,
+                use: ['html-loader']
+            },
+            {
                 test: /\.s[ac]ss$/i,
                 use: [
                     MiniCssExtractPlugin.loader,
@@ -22,8 +26,7 @@ module.exports = {
             },
             {
                 test: /\.(jpg|png|svg|jpe?g|gif)$/i,
-                use: [
-                    {
+                use: [{
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
@@ -73,6 +76,7 @@ module.exports = {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
         port: 9000,
-        open: true
+        open: true,
+        hot: true
     }
 };
