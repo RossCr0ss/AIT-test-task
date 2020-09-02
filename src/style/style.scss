@@ -1,7 +1,8 @@
 @import "/src/bootstrap/bootstrap.scss";
+
 @font-face {
     font-family: 'BalooTammudu2';
-    src:  url('./../assets/fonts/BalooTammudu2-Bold.ttf') format('ttf');
+    src: url('./../assets/fonts/BalooTammudu2-Bold.ttf') format('ttf');
 
     font-weight: 600;
     font-style: normal;
@@ -30,18 +31,40 @@ body {
                     background-color: #00ca00;
                     width: 149px;
                     height: 40px;
-                    color: #ffffff;
+                    color: #fff;
                     font-size: 16px;
                     font-weight: 400;
+                }
+
+                &-toggle::after {
+                    display: none;
                 }
             }
         }
 
-        .form-inline {
-            .form-control {
-                border-radius: 0 20px 20px 0;
-                background-color: #ffffff;
+
+
+        .has-search {
+            border-radius: 0 20px 20px 0;
+            background-color: #fff;
+            /* width: 452px;
+            height: 40px; */
+            padding-right: 10px;
+
+            input {
+                color: #7a7a7a;
+                font-size: 16px;
+                line-height: 50px;
+                border: none;
             }
+            
+            .form-control-feedback {
+                width: 19px;
+                height: 20px;
+                text-align: center;
+                cursor: pointer;
+            }
+
         }
     }
 }
