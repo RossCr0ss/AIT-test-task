@@ -115,6 +115,7 @@ body {
             .card {
                 height: 100%;
                 position: relative;
+                border-radius: 10px;
 
                 &-img-overlay {
                     padding: 1.25rem;
@@ -181,6 +182,7 @@ body {
             .card {
                 height: calc(50% - 0.5rem);
                 position: relative;
+                border-radius: 10px;
 
                 img {
                     background-size: cover;
@@ -224,6 +226,7 @@ body {
             justify-content: space-around;
             align-items: center;
             background-color: #FFF;
+            border-radius: 10px;
 
             &-item {
                 display: flex;
@@ -264,22 +267,197 @@ body {
 
     }
 
-    .carousel-wrapper {
-        .carousel{
+    /* .carousel-wrapper {
+        .carousel {
             background: #2f4357;
             margin-top: 20px;
         }
-        .carousel-item{
+
+        .carousel-item {
             text-align: center;
-            min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+            min-height: 280px;
         }
-        .bs-example{
+
+        .bs-example {
             margin: 20px;
         }
-    }
+    } */
 }
 
 .responsive {
     width: 100%;
     height: auto;
 }
+
+.carousel-wrapper {
+    margin-top: 30px;
+
+    .container {
+        /* position: relative; */
+
+        .owl {
+
+            &-carousel {
+                .card {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                    border: 1px solid #e9e9e9;
+
+                    .img-wrapper {
+                        height: 200px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1rem;
+                    }
+
+                    &-title {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 19px;
+                        margin-bottom: 20px;
+                    }
+
+                    &-body {
+                        padding: 1rem;
+                    }
+
+                    &-text {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 20px;
+
+                        .first-price {
+                            font-size: 29px;
+                            font-weight: 700;
+                            width: fit-content;
+                            border-radius: 28px;
+                            background-color: #ff250d;
+                            color: #FFF;
+                            padding: 0.1rem 0.5rem;
+                            line-height: 1.1;
+                        }
+
+                        .second-price {
+                            font-size: 24px;
+                            font-weight: 700;
+                            padding: 0 1rem;
+                            width: fit-content;
+                            position: relative;
+
+                            color: #333333;
+
+                            .red-line {
+                                position: absolute;
+                                top: 46%;
+                                left: 13px;
+                                width: calc(100% - 26px);
+                                z-index: 1;
+                                background-color: red;
+                                height: 3px;
+                                border-radius: 2px;
+                            }
+                        }
+                    }
+
+                    &-button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1rem;
+                    }
+
+
+                }
+            }
+
+            &-nav {
+                position: absolute;
+                top: -65px;
+                right: 0;
+
+                button:first-child {
+                    margin-right: 10px;
+                }
+
+                span {
+                    font-size: 32px;
+                    line-height: 32px;
+                }
+
+                .owl-next,
+                .owl-prev {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: #FFF;
+                }
+
+                .owl-prev:hover,
+                .owl-next:hover {
+                    background-color: #ffbd00;
+                    color: #FFF;
+                }
+            }
+
+            &-dots {
+                margin-top: 20px;
+
+                .owl-dot span {
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid #ffbd00;
+                    background-color: #ffffff !important;
+                }
+
+                .owl-dot.active span {
+                    background-color: #ffbd00 !important;
+                }
+            }
+        }
+    }
+
+
+}
+
+/* .owl-buttons {
+    display: none;
+} */
+
+/* .owl-carousel:hover .owl-buttons {
+    display: block;
+}
+
+.owl-item {
+    text-align: center;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    background: transparent;
+    color: #869791;
+    font-size: 40px;
+    line-height: 300px;
+    margin: 0;
+    padding: 0 60px;
+    position: absolute;
+    top: 0;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+    left: 0;
+    padding-left: 20px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next {
+    right: 0;
+    padding-right: 20px;
+} */
+
+/* .owl-carousel .owl-item img {
+    display: block;
+    width: fit-content;
+    height: auto;
+} */
