@@ -11,6 +11,17 @@ body {
     font-family: 'BalooTammudu2', sans-serif;
     background-color: #f1f6fa;
 
+    @media (min-width: 1200px) {
+
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 1170px;
+        }
+    }
+
     .header {
         margin-top: 35px;
 
@@ -374,28 +385,30 @@ body {
                 padding-bottom: 10px;
                 border-bottom: 1px solid #dddddd;
                 width: 100%;
+                margin-top: 30px;
 
                 .popular-title {
-                    width: 60%;
+                    width: calc(60% - 10px);
                 }
 
                 .review-title {
-                    width: 40%;
+                    width: calc(40% - 10px);
                 }
             }
 
             .info {
+                margin-top: 30px;
+
                 &-popular {
-                    margin-top: 30px;
-                    width: 60%;
+                    width: calc(60% - 10px);
 
                     .owl-nav {
                         top: -100px;
-                
+
                         button:first-child {
                             margin-right: 10px;
                         }
-                
+
                         .owl-next,
                         .owl-prev {
                             width: 40px;
@@ -403,7 +416,7 @@ body {
                             border-radius: 50%;
                             background-color: #FFF;
                         }
-                
+
                         .owl-prev:hover,
                         .owl-next:hover {
                             background-color: #ffbd00;
@@ -425,13 +438,15 @@ body {
                         }
 
                         .flex-container:nth-child(odd)>div {
-                            margin: 0 10px 5px 0;
+                            margin: 0 10px 10px 0;
                         }
 
-
-
                         .flex-container:nth-child(even)>div {
-                            margin: 0 0 5px 10px;
+                            margin: 0 0 10px 10px;
+                        }
+
+                        .flex-container>div:last-child {
+                            margin-bottom: 0 !important;
                         }
 
                         .card {
@@ -472,7 +487,73 @@ body {
                 }
 
                 &-review {
-                    width: 40%;
+                    width: calc(40% - 10px);
+
+                    .card {
+                        background-color: transparent;
+                        border: none;
+
+                        &-header {
+                            background-color: transparent;
+                            border-bottom: none;
+                            padding: 0 20px;
+
+                            .img-wrapper {
+                                width: 112px;
+                                display: flex;
+                                align-items: center;
+                                
+                                img {
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .text {
+                                .title {
+                                    color: #2b2b2b;
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                    line-height: 1.1;
+                                    margin-bottom: 5px;
+                                }
+
+                                .date {
+                                    color: #5b5e5f;
+                                    font-size: 16px;
+                                    line-height: 1.1;
+                                    margin-bottom: 5px;
+                                }
+                            }
+                        }
+
+                        .quotes-wrapper {
+                            margin: 0 1.25rem;
+                            width: 39px;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        &-body {
+                            color: #2b2b2b;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 1.1;
+                            padding: 12px 20px;
+                        }
+                    }
+
+                    .owl-theme {
+                        .owl-nav.disabled+.owl-dots {
+                            margin-top: 0;
+                            float: left;
+                            margin-left: 20px;
+                        }
+
+                        .owl-dots .owl-dot span {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
                 }
             }
         }
@@ -490,7 +571,7 @@ body {
     .container {
         /* position: relative; */
 
-         .owl {
+        .owl {
 
             &-carousel {
                 .card {
