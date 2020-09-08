@@ -359,6 +359,124 @@ body {
 
         }
     }
+
+    .additional {
+        margin-top: 80px;
+
+        .container {
+
+            .additional-header {
+                color: #2b2b2b;
+                font-size: 56px;
+                font-weight: 700;
+                line-height: 1.1;
+                text-transform: uppercase;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #dddddd;
+                width: 100%;
+
+                .popular-title {
+                    width: 60%;
+                }
+
+                .review-title {
+                    width: 40%;
+                }
+            }
+
+            .info {
+                &-popular {
+                    margin-top: 30px;
+                    width: 60%;
+
+                    .owl-nav {
+                        top: -100px;
+                
+                        button:first-child {
+                            margin-right: 10px;
+                        }
+                
+                        .owl-next,
+                        .owl-prev {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: #FFF;
+                        }
+                
+                        .owl-prev:hover,
+                        .owl-next:hover {
+                            background-color: #ffbd00;
+                            color: #FFF;
+                        }
+                    }
+
+                    .item {
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .flex-container>div {
+                            border-radius: 10px;
+                            border: 1px solid #e9e9e9;
+                            background-color: #ffffff;
+                            text-align: center;
+                            line-height: 75px;
+                            font-size: 30px;
+                        }
+
+                        .flex-container:nth-child(odd)>div {
+                            margin: 0 10px 5px 0;
+                        }
+
+
+
+                        .flex-container:nth-child(even)>div {
+                            margin: 0 0 5px 10px;
+                        }
+
+                        .card {
+                            .img-wrapper {
+                                padding: 0;
+                                width: 150px;
+                                display: flex;
+                                align-items: center;
+                            }
+
+                            &-body {
+                                padding: 0.5rem;
+                            }
+
+                            &-title {
+                                text-align: initial;
+                            }
+
+                            &-text span {
+                                color: #333333;
+                                font-size: 24px;
+                                font-weight: 700;
+                                line-height: 1.1;
+                            }
+
+                            button {
+                                border-radius: 21px;
+                            }
+
+                            button:hover {
+                                border: 2px solid #00ca00;
+                            }
+
+                        }
+
+
+                    }
+                }
+
+                &-review {
+                    width: 40%;
+                }
+            }
+        }
+    }
 }
 
 .responsive {
@@ -372,7 +490,7 @@ body {
     .container {
         /* position: relative; */
 
-        .owl {
+         .owl {
 
             &-carousel {
                 .card {
@@ -496,6 +614,50 @@ body {
             }
         }
     }
+}
 
+.owl {
+    &-nav {
+        position: absolute;
+        top: -65px;
+        right: 0;
 
+        button:first-child {
+            margin-right: 10px;
+        }
+
+        span {
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        .owl-next,
+        .owl-prev {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #FFF;
+        }
+
+        .owl-prev:hover,
+        .owl-next:hover {
+            background-color: #ffbd00;
+            color: #FFF;
+        }
+    }
+
+    &-dots {
+        margin-top: 20px;
+
+        .owl-dot span {
+            width: 16px;
+            height: 16px;
+            border: 1px solid #ffbd00;
+            background-color: #ffffff !important;
+        }
+
+        .owl-dot.active span {
+            background-color: #ffbd00 !important;
+        }
+    }
 }
