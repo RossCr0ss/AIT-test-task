@@ -3,6 +3,7 @@ import './bootstrap/bootstrap.js';
 import './owlCarousel/owl.carousel.scss';
 import 'owl.carousel';
 
+
 jQuery(document).ready(function ($) {
     $('.dropdown-toggle').dropdown();
 
