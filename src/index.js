@@ -27,11 +27,23 @@ jQuery(document).ready(function ($) {
                 nav: true,
                 loop: false
             }
-        },
-        /* dotsData: true, */
-
+        }
     });
 
+    $("#owl-carousel2").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 1,
+        dots: false
+    });
 
+    $("#owl-carousel3").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        items: 1,
+        dots: true
+    });
 
 });
