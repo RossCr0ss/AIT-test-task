@@ -569,6 +569,26 @@ body {
         }
     }
 
+    .feedback {
+        .container {
+            .list-group {
+                background-color: transparent;
+                flex: 1;
+
+                .list-group-item {
+                    background-color: transparent;
+
+                    .wrapper {
+                        width: 40px;
+                        height: 40px;
+                        background-color: #ffbd00;
+                        border-radius: 50%
+                    }
+                }
+            }
+        }
+    }
+
     .footer {
         margin-top: 30px;
         background-color: #0074ea;
