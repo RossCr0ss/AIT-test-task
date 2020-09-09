@@ -12,16 +12,19 @@ jQuery(document).ready(function ($) {
         loop: true,
         margin: 10,
         nav: true,
-        /* dots: true, */
         responsiveClass: true,
         responsive: {
             0: {
                 items: 1,
-                nav: true
+                nav: false
             },
             600: {
+                items: 2,
+                nav: true
+            },
+            768: {
                 items: 3,
-                nav: false
+                nav: true
             },
             1000: {
                 items: 4,
@@ -36,7 +39,8 @@ jQuery(document).ready(function ($) {
         margin: 10,
         nav: true,
         items: 1,
-        dots: false
+        dots: false,
+
     });
 
     $("#owl-carousel3").owlCarousel({
